@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Linear layout vertical-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".StatusFragment"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--Kolom pencarian-->
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_second_solid"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <!--Label elements-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elements"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--Layout relative sebagai wadah elements-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <!--Elements-->
+        <RelativeLayout
+            android:id="@+id/ctg_first"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_planets"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cryo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_planets"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="Pyro"
+                android:textAlignment="center"
+                android:textColor="#7C7C7C"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!--Second elements-->
+        <RelativeLayout
+            android:id="@+id/ctg_second"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/ctg_first"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img_planets2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pyro" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pyro"
+                android:textSize="12sp"
+                android:layout_below="@+id/img_planets2"
+                android:textColor="#7C7C7C"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+        <!--Third elements-->
+        <RelativeLayout
+            android:id="@+id/ctg_third"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/ctg_second"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img_planets3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/dendro" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_planets3"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="Dendro"
+                android:textAlignment="center"
+                android:textColor="#7C7C7C"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!--Fouth elements-->
+        <RelativeLayout
+            android:id="@+id/ctg_4rd"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/ctg_third"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img_planets4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/anemo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anemo"
+                android:textSize="12sp"
+                android:layout_below="@+id/img_planets4"
+                android:textColor="#7C7C7C"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--Label banner character-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Banner Characters"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--first banner-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/bannerhutao"
+        android:layout_marginTop="10dp"/>
+
+    <!--second banner-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/bannerbaal"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
